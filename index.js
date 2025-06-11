@@ -40,7 +40,7 @@ function criarItemCarrinho(produto) {
             }</p>
         </div>
     </div>
-    <button class="remover-item">Remover</button>
+    <button class="remover-item">Remove from Cart</button>
     `;
 
     carrinhoContainer.appendChild(item);
