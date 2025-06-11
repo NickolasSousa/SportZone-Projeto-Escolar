@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Trocchi&display=swap');
+
+body{
+    font-family: var(--fonte);
+    background-color: var(--cor-fundo);
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    max-height: fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    margin-left: -1em;
+
+}
+
+.logo img{
+    width: 100%;
+    width: 50vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5em;
+    width: 100vw;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+.main-text{
+    font-family: var(--fonte);
+    font-size: 2em;
+    color: white;
+}
+
+.sub-text{
+    font-family: var(--fonte2);
+    font-size: 1em;
+    color: white;
+    width: 70vw;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    
+    
+}
+
+.card{
+    background-color: white;
+    padding: 1em 2em;
+    text-align: center;
+    width: 60vw;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.card a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor-botao);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-family: var(--fonte2);
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.card a:onclick {
+    background-color: var(--botao-hover);
+}
+
+.card9{
+    margin-bottom: 5em;
+}
+
+
+/* MENU */
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 83.5%;
+    
+    padding: 1em 2em;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+}
+.menu-container a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor-botao);
+    padding: 0.5em 1em;
+    border-radius: 10em;
+    font-family: var(--fonte2);
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.menu-main a, .menu-carrinho a{
+    position: relative;
+}
+
+.menu-profile{
+    position: absolute;
+    bottom: calc(100% - 1em);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.menu-container a img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+/* PROFILE */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    padding: 2em 0;
+    font-family: var(--fonte2);
+    font-weight: 700;
+    color: #454545;
+    overflow: hidden;
+}
+
+.profile-info{
+    background-color: var(--cor-botao);
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    border: 2px solid #454545;
+}
+
+
+.profile-info img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: rgb(131, 131, 131);
+}
+
+.profile-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.3em;
+    
+}
+
+.profile-edit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-botao);
+    padding: 1em 3em;
+    font-family: var(--fonte2);
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #454545;
+}
+
+.log-out{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-botao);
+    padding: 0.5em 1.5em;
+    border: rgb(255, 74, 74, 0.5) 2px solid;
+    border-radius: 2em;
+    width: 74vw;
+    font-family: var(--fonte2);
+    font-weight: 700;
+}
+
+
+
+
